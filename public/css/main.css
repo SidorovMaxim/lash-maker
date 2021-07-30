@@ -1,0 +1,628 @@
+html {
+	height: 100%;
+}
+
+body {
+	background: linear-gradient(315deg, #c5bce0, #9de0b4);
+	height: 100%;
+	overflow: hidden;
+	font-family: Times New Roman;
+}
+
+.header {
+	height: 45px;
+	position: relative;
+	border-bottom: #8773c1 solid 1px;
+	background: linear-gradient(135deg, #8773c1, #50c878);
+	text-align: right;
+	color: white;
+}
+.imgButtonBack {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: auto;
+	height: 100%;
+	filter: invert(100%);
+}
+.headerTextLogin {
+	position: absolute;
+	right: 7px;
+	top: 13px;
+	font-style: italic;
+}
+.headerText {
+	position: absolute;
+	right: 37px;
+	top: 4px;
+	font-style: italic;
+}
+
+.event-header {
+	margin: 0%;
+}
+
+.mainContainer {
+	text-align: center;
+	width: 100%;
+}
+
+.mainPageButton {
+	position: absolute;
+	z-index: 1052;
+	top: 6px;
+	height: 33px;
+	width: 50px;
+	padding: 0;
+	background-color: transparent;
+	border: none;
+}
+.commonButton {
+	display: block;
+	margin: 10px auto;
+	background: linear-gradient(135deg, #8773c1, #50c878);
+	/*background: #50c878;*/
+	font-weight: normal;
+	border: #8773c1 solid 1px;
+	border-radius: 6px;
+	color: white;
+	font-family: Times New Roman;
+}
+.buttonPageSelect, .buttonSaveNewClient {
+	width: 90%;
+	max-width: 400px;
+	height: 45px;
+	font-size: 20px;
+}
+.buttonLoginPage {
+	width: 90%;
+	max-width: 400px;
+	height: 45px;
+	font-size: 20px;
+}
+.buttonRegPage {
+	margin-top: 20px;
+	background: transparent;
+	color: white;
+	font-size: 14px;
+	text-decoration: underline;
+	border: none;
+}	
+.buttonClientPage {
+	width: 40%;
+	max-width: 180px;
+	height: 45px;
+	margin-top: 10px;
+	font-size: 100%;
+	border-width: 2px;
+	border-radius: 6px;
+	color: #5a5a5a;
+	font-weight: normal;
+}
+.buttonAddEvent {
+	width: 90%;
+	max-width: 324px;
+	height: 45px;
+	font-size: 120%;
+}
+.buttonSaveEyelashScheme {
+	width: 330px;
+	height: 45px;
+	margin-top: 0px;
+	font-size: 20px;
+}
+
+.editButton {
+	margin-right: 20px;
+	color: #5a5a5a;
+	border: #ffa343 solid 1px;
+	background: white;
+}
+.confirmButton {
+	position: relative;
+	z-index: 1;
+	margin-left: 20px;
+	color: #5a5a5a;
+	border: #ffa343 solid 1px;
+	background: white;
+/*	-webkit-animation-duration: .3s;
+	animation-duration: .3s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-name: changeEditBtn;
+			animation-name: changeEditBtn;*/
+}
+.cancelButton {
+	margin-right: 20px;
+	color: #5a5a5a;
+	border: lightgrey solid 1px;
+	background: white;
+}
+
+.deleteButton {
+	margin-left: 20px;
+	color: #5a5a5a;
+	border: #f0355a solid 1px;
+	background: white;
+}
+.yesButton {
+	position: relative;
+	z-index: 1;
+	margin-right: 20px;
+	color: #5a5a5a;
+	border: #f0355a solid 1px;
+	background: white;
+	-webkit-animation-duration: .3s;
+	animation-duration: .3s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-name: changeWidthDeleteBtn;
+			animation-name: changeWidthDeleteBtn;
+}
+.noButton {
+	margin-left: 20px;
+	color: #5a5a5a;
+	border: lightgrey solid 1px;
+	background: white;
+}
+
+.iconSave, .iconEdit {
+	width: auto;
+	height: 25%;
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	filter: invert(100%);
+}
+.iconUser {
+	width: auto;
+	height: 75%;
+	position: absolute;
+	right: 5px;
+	top: 6px;
+	filter: invert(100%);
+}
+.iconDelete {
+	width: auto;
+	height: 25%;
+	position: absolute;
+	left: 5px;
+	top: 5px;
+	filter: invert(100%);
+}
+.iconYes {
+	width: auto;
+	height: 25%;
+	position: absolute;
+	left: 45px;
+	top: 5px;
+	margin-top: -10px;
+	padding: 0;
+	background-color: transparent;
+	font-size: 250%;
+	color: #ff8d8d;
+	border: none;
+}
+.iconNo {
+	width: auto;
+	height: 25%;
+	position: absolute;
+	left: 5px;
+	top: 5px;
+	margin-top: -10px;
+	padding: 0;
+	background-color: transparent;
+	font-size: 250%;
+	color: white;
+	border: none;
+}
+.iconDeleteRed {
+	position: relative;
+	z-index: 2;
+	width: 38px;
+	height: 38px;
+	border: solid 0px;
+	border-radius: 50%;
+	background-image: url('../images/deleteRed.png');
+	background-size: cover;
+}
+.iconYesRed {
+	position: relative;
+	z-index: 2;
+	width: 38px;
+	height: 38px;
+	margin-right: -38px;
+	border-style: solid;
+	border-radius: 50%;
+	background-color: #ff8d8d;
+	-webkit-animation-duration: .6s;
+			animation-duration: .6s;
+	-webkit-animation-fill-mode: both;
+			animation-fill-mode: both;
+	-webkit-animation-name: changeIconYesRedPosition;
+			animation-name: changeIconYesRedPosition;
+}
+.iconNoRed {
+	position: relative;
+	z-index: 3;
+	width: 38px;
+	height: 38px;
+	border-style: solid;
+	border-radius: 50%;
+	background-image: none;
+}
+.iconYesHeader {
+	width: auto;
+	height: 25%;
+	position: absolute;
+	right: 90px;
+	top: 5px;
+	margin-top: -10px;
+	padding: 0;
+	background-color: transparent;
+	font-size: 230%;
+	color: white;
+	border: none;
+}
+.iconNoHeader {
+	width: auto;
+	height: 25%;
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	margin-top: -10px;
+	padding: 0;
+	background-color: transparent;
+	font-size: 230%;
+	color: white;
+	border: none;
+}
+
+.lockedClientInfoArea {
+	display: block;
+	height: 45px;
+	width: 90%;
+	max-width: 400px; 
+	padding: 11px;
+	margin: 10px auto;
+	border-radius: 6px;
+	border: transparent solid 1px;
+	background: rgba(255, 255, 255, 0);
+	color: rgb(20,20,20);
+	text-align: center;
+	font-family: Times New Roman;
+	font-size: 18px;
+	resize: none;
+}
+.clientInfoArea {
+	display: block;
+	height: 45px;
+	width: 90%;
+	max-width: 400px;
+	padding: 11px;
+	margin: 10px auto;
+	border-radius: 6px;
+	border: #8773c1 solid 1px;
+	background: rgba(255, 255, 255, 0.5);
+	color: rgb(20,20,20);
+	text-align: center;
+	font-family: Times New Roman;
+	font-size: 18px;
+	resize: none;
+}
+.schemeInfoArea {
+	height: 45px;
+	width: calc(100% - 10px);
+	max-width: 720px;
+	padding: 11px;
+	margin: 5px auto 0 auto;
+	border-radius: 6px;
+	border: #8773c1 solid 1px;
+	background: rgba(255, 255, 255, 0.5);
+	color: rgb(20,20,20);
+	text-align: center;
+	font-family: Times New Roman;
+	font-size: 18px;
+	resize: none;
+}
+.lockedSchemeInfoArea {
+	height: 45px;
+	width: 95%;
+	max-width: 720px;
+	padding: 11px;
+	margin: 5px auto 0 auto;
+	border-radius: 6px;
+	border: transparent solid 1px;
+	background: rgba(255, 255, 255, 0);
+	color: rgb(20,20,20);
+	text-align: center;
+	font-family: Times New Roman;
+	font-size: 18px;
+	resize: none;
+}
+
+.select2-container {
+	max-width: 400px;
+}
+
+.select2-selection__rendered {
+	padding: 4.5px;
+	border-radius: 6px;
+	font-size: 18px;
+	text-align: center;
+    line-height: 200% !important;
+}
+.select2-container .select2-selection--single {
+	max-width: 400px;
+	background: rgba(255, 255, 255, 0.5);
+	margin: 10px auto 0 auto;
+	border: #8773c1 solid 1px;
+	border-radius: 6px;
+    height: 100% !important;
+}
+.select2-selection__arrow {
+    height: 110% !important;
+}
+.select2-dropdown {
+	background: linear-gradient(315deg, #e3dff0, #c5edd3);
+	max-width: 400px;
+	margin: 0 auto;
+}
+.select2-results {
+	/*background: linear-gradient(315deg, #c5bce0, #9de0b4);*/
+	text-align: center;
+	color: rgb(20,20,20);
+}
+.select2-results__option--selectable {
+	
+}
+.select2-results__option--highlighted {
+
+}
+.select2-search__field {
+	background: rgba(255, 255, 255, 0.5);
+	padding-top:-200px;
+	text-align: center;
+    line-height: 100% !important; 
+}
+
+.title1 {
+	color: rgb(20,20,20);
+	margin: 2% 0 0% 0;
+}
+/*		.titleInlnie {
+	display: inline-block;
+	color: #5a5a5a;
+	margin: 2% 0 0% 0;
+}*/
+
+.processContainer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 50%;
+}
+.loading {
+	position: absolute;
+	top: calc(50% + 50px);
+	left: 50%;
+	width: 90%;
+	transform: translateX(-50%) translateY(-50%);
+		-o-transform: translateX(-50%) translateY(-50%);
+		-ms-transform: translateX(-50%) translateY(-50%);
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		-moz-transform: translateX(-50%) translateY(-50%);
+	transform-origin: center;
+		-o-transform-origin: center;
+		-ms-transform-origin: center;
+		-webkit-transform-origin: center;
+		-moz-transform-origin: center;
+	color: #5a5a5a;
+}
+
+.resultContainer {
+	margin-top: 2%;
+	display: inline-block;
+	width: 85%;
+	max-width: 400px;
+}
+.error {
+	margin-top: 4%;
+	color: red;
+}
+.success {
+	margin-top: 4%;
+	color: green;
+}
+.error, .success {
+	text-align: left;
+	margin-top: 1%;
+	-webkit-animation-duration: 4s;
+			animation-duration: 4s;
+	-webkit-animation-fill-mode: both;
+			animation-fill-mode: both;
+	-webkit-animation-name: fadeIn;
+			animation-name: fadeIn;
+} 
+
+.schemeAreaContainer, .numOfAreasContainer, .parametersAreaContainer {
+	position: relative;
+	display: block;
+	width: calc(100% - 10px);
+	max-width: 720px;
+	margin: 5px auto 0 auto;
+	border: #8773c1 solid 1px;
+	border-radius: 5px;
+}
+.schemeAreaContainer {
+	height: 23vh;
+}
+.numOfAreasContainer {
+	height: 85px;
+}
+.parametersAreaContainer {
+	overflow-y: auto;
+	height: calc(77vh - 200px);
+}
+
+.areaContainer {
+	position: relative;
+	display: block;
+	width: calc(100% - 20px);
+	height: 30px;
+	margin: 20px auto 0 auto;
+}
+.areaWidthContainer {
+	position: relative;
+	width: calc(100% - 40px);
+}
+
+.areaLength, .numOfAreasText {
+	position: absolute;
+	display: inline-block;
+	width: 30px;
+	height: 25px;
+	line-height: 20px;
+	top: -2px;
+	right: 0px;
+	font-size: 16px;
+	font-family: Times New Roman;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: 2px solid #8773c1;
+	border-radius: 4px;
+	background-color: white;
+	text-align-last: center;
+}
+.numOfAreasText {
+	font-size: 16px;
+	font-family: Times New Roman;
+}
+.areaWidth {
+	position: relative;
+	margin: 0 0 -5px 0;
+}
+input[type='range'] {
+	-webkit-appearance: none;
+	overflow: hidden;
+	height: 20px;
+	width: 100%;
+	max-width: 720px;
+	border-radius: 10px;
+	background-color: transparent;
+}	
+input[type='range']::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	width: 15px;
+	height: 15px;
+	margin-top: -5px;
+	border: 0.5px solid grey;
+	border-radius: 15px;
+	background-color: white;
+}
+input[type='range']::-webkit-slider-runnable-track {
+	background-color: transparent;
+	height: 4px;
+	border-radius: 4px;
+}
+input[type="range"]::-moz-range-thumb {
+	width: 15px;
+	height: 15px;
+	border-radius: 15px;
+	background-color: white;
+}
+input[type="range"]::-moz-range-progress {
+	height: 4px;
+	border-radius: 4px;
+	background-color: transparent;
+}
+input[type="range"]::-moz-range-track {
+	height: 3px;
+	border-radius: 3px;
+	background-color: transparent;
+}
+input[type="range"]::-ms-fill-lower {
+	height: 4px;
+	border-radius: 4px;
+	background-color: #8773c1;
+}
+input[type="range"]::-ms-fill-upper {
+	height: 3px;
+	border-radius: 3px;
+	background-color: #c5bce0;
+}
+.leftTrack {
+	position: absolute;
+	z-index: -1;
+	display: inline-block;
+	height: 4px;
+	margin-top: 8px;
+	background-color: #8773c1;
+	border-radius: 2px;
+}
+.rightTrack {
+	position: absolute;
+	z-index: -1;
+	display: inline-block;
+	height: 4px;
+	margin-top: 8px;
+	background-color: #a799d1;
+	border-radius: 2px;
+}
+
+.evo-calendar, .calendar-inner, .calendar-events {
+	background: rgba(255, 255, 255, 0.3);
+}
+
+.blocker {
+    position: absolute;
+    z-index: 1053;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+@-webkit-keyframes fadeIn {
+	0% {opacity: 0;}
+	25% {opacity: 1;}
+	100% {opacity: 0;}
+}
+@keyframes fadeIn {
+	0% {opacity: 0;}
+	25% {opacity: 1;}
+	100% {opacity: 0;}
+}
+@-webkit-keyframes changeDeleteBtn {
+	0% {width: 40%; margin-right: -21%;}
+	100% {width: 19%; margin-right: 0%;}
+}
+@keyframes changeDeleteBtn {
+	0% {width: 40%; margin-right: -21%;}
+	100% {width: 19%; margin-right: 0%;}
+}
+@-webkit-keyframes changeEditBtn {
+	0% {margin-left: -20px;}
+	100% { margin-left: 20px;}
+}
+@keyframes changeEditBtn {
+	0% {margin-left: -20px;}
+	100% {margin-left: 20px;}
+}
+@-webkit-keyframes changeIconYesPosition {
+	0% {left: 5px;}
+	100% {left: 45px;}
+}
+@keyframes changeIconYesPosition {
+	0% {left: 5px;}
+	100% {left: 45px;}
+}
+@-webkit-keyframes changeIconYesRedPosition {
+	0% {margin-left: -38px;}
+	100% {margin-left: 0;}
+}
+@keyframes changeIconYesRedPosition {
+	0% {margin-left: -38px;}
+	100% {margin-left: 0;}
+}
